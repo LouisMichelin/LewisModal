@@ -9,7 +9,7 @@ export function closeModal() {
 
 // EDIT DEPUIS JS LE CSS
 
-function Modal() {
+export default function Modal() {
    return (
       <>
          <div id="validationModal">
@@ -21,4 +21,3 @@ function Modal() {
       </>
    );
 }
-export default Modal;
