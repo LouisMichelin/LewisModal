@@ -1,12 +1,14 @@
 {
    "name": "lewismodal",
    "private": false,
-   "version": "1.0.5-b",
-   "main": "index.js",
-   "type": "module",
+   "version": "1.0.6-c",
+   "main": "./dist/index.js",
+   "style": "./dist/Modal.scss",
    "repository": {
+      "type": "git",
       "url": "https://github.com/LouisMichelin/LewisModal"
    },
+   "homepage": "https://github.com/LouisMichelin/LewisModal",
    "scripts": {
       "dev": "vite",
       "build": "vite build",
