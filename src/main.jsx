@@ -4,7 +4,7 @@ import Modal from "./components/Modal.jsx";
 import "./index.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-   <React.StrictMode>
+   <React>
       <Modal />
-   </React.StrictMode>
+   </React>
 );

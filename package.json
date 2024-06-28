@@ -1,9 +1,12 @@
 {
    "name": "lewismodal",
    "private": false,
-   "version": "1.0.0",
-   "type": "module",
+   "version": "1.0.5-b",
    "main": "index.js",
+   "type": "module",
+   "repository": {
+      "url": "https://github.com/LouisMichelin/LewisModal"
+   },
    "scripts": {
       "dev": "vite",
       "build": "vite build",
@@ -23,6 +26,12 @@
       "eslint-plugin-react": "^7.34.2",
       "eslint-plugin-react-hooks": "^4.6.2",
       "eslint-plugin-react-refresh": "^0.4.7",
+      "sass": "^1.77.6",
       "vite": "^5.3.1"
-   }
+   },
+   "keywords": [
+      "first",
+      "modal",
+      "handmade"
+   ]
 }
