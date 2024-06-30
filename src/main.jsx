@@ -1,10 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 import Modal from "./components/Modal.jsx";
-import "./index.scss";
+import "./style.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-   <React>
-      <Modal />
-   </React>
-);
+export default Modal;

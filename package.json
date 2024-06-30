@@ -1,19 +1,32 @@
 {
    "name": "lewismodal",
+   "version": "1.1.2",
+   "description": "My first modal component exported towards NPM",
+   "author": "Louis Michelin",
+   "license": "MIT",
+   "type": "module",
+   "main": "./dist/modal.js",
+   "module": "./dist/modal.js",
    "private": false,
-   "version": "1.0.6-c",
-   "main": "./dist/index.js",
-   "style": "./dist/Modal.scss",
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/LouisMichelin/LewisModal"
+   "files": [
+      "dist"
+   ],
+   "exports": {
+      ".": {
+         "import": "./dist/modal.js"
+      },
+      "./style.css": "./dist/style.css"
    },
-   "homepage": "https://github.com/LouisMichelin/LewisModal",
    "scripts": {
       "dev": "vite",
       "build": "vite build",
       "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
       "preview": "vite preview"
+   },
+   "homepage": "https://github.com/LouisMichelin/LewisModal",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/LouisMichelin/LewisModal"
    },
    "dependencies": {
       "node-fetch": "^3.3.2",
