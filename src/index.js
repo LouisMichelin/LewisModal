@@ -1,4 +1,4 @@
 import Modal from "./components/Modal.jsx";
-import "./style.css";
+// import "./style.css";
 
 export default Modal;
