@@ -1,18 +1,13 @@
 {
    "name": "lewismodal",
-   "version": "1.1.17",
+   "version": "1.1.19",
    "description": "My first modal component exported towards NPM",
    "author": "Louis Michelin",
    "license": "MIT",
    "type": "module",
-   "main": "dist/index.js",
+   "main": "index.js",
+   "module": "index.js",
    "private": false,
-   "files": [
-      "dist"
-   ],
-   "exports": {
-      ".": "./dist/index.js"
-   },
    "scripts": {
       "dev": "vite",
       "build": "vite build",
