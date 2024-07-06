@@ -13,11 +13,18 @@ export default function Modal({
    modalFontColor,
    modalFontSize,
 }) {
+   const defaultModal = {
+      message: modalMessage || "Success !",
+      backgroundColor: modalBackground || "lightgreen",
+      fontColor: modalFontColor || "black",
+      fontSize: modalFontSize || 32,
+   };
+
    return (
       <div
          id="validationModal"
          style={{
-            backgroundColor: modalBackground,
+            backgroundColor: defaultModal.backgroundColor,
          }}
       >
          <div id="positionModal">
@@ -25,11 +32,11 @@ export default function Modal({
             <div
                id="confirmationModal"
                style={{
-                  color: modalFontColor,
-                  fontSize: modalFontSize,
+                  color: defaultModal.fontColor,
+                  fontSize: defaultModal.fontSize,
                }}
             >
-               {modalMessage}
+               {defaultModal.message}
             </div>
          </div>
       </div>
