@@ -9,7 +9,7 @@ LewisModal aims at creating a light, swift & customizable modal to complete what
 -  [Install](#installation)
 -  [Languages used](#languages)
 -  [How to use it ?](#how-does-it-work-)
--  [Licensing](#lincensing)
+-  [Licensing](#licensing)
 
 ## Installation
 
