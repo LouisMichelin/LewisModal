@@ -5,8 +5,8 @@
    display: none;
    position: absolute;
    z-index: 999;
-   width: 90%;
-   height: 90%;
+   width: 80%;
+   height: 80%;
    top: 50%;
    left: 50%;
    right: auto;
@@ -69,24 +69,24 @@
 ///////////////////
 #confirmationModal {
    font-weight: 600;
-   font-size: 20px;
    text-align: center;
+   // font-size: 20px;
 }
-@media (min-width: 425px) {
-   #confirmationModal {
-      font-weight: 600;
-      font-size: 22px;
-   }
-}
-@media (min-width: 768px) {
-   #confirmationModal {
-      font-weight: 600;
-      font-size: 24px;
-   }
-}
-@media (min-width: 1024px) {
-   #confirmationModal {
-      font-weight: 600;
-      font-size: 26px;
-   }
-}
+// @media (min-width: 425px) {
+//    #confirmationModal {
+//       font-weight: 600;
+//       font-size: 22px;
+//    }
+// }
+// @media (min-width: 768px) {
+//    #confirmationModal {
+//       font-weight: 600;
+//       font-size: 24px;
+//    }
+// }
+// @media (min-width: 1024px) {
+//    #confirmationModal {
+//       font-weight: 600;
+//       font-size: 26px;
+//    }
+// }
