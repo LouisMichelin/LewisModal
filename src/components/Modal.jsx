@@ -23,6 +23,8 @@ export default function Modal({
     * - modalBackground : Color of the background on <Modal/>
     * - modalFontColor : Color of the message on <Modal/>
     * - modalFontSize : Size of the message on <Modal/>
+    *
+    *
     */
    const defaultModal = {
       message: modalMessage || "Success !",
@@ -31,9 +33,22 @@ export default function Modal({
       fontSize: modalFontSize || 32,
    };
 
+   // MORE EDITABLES :
+   // - DEFAULT FONT : font-family: Arial, Helvetica, sans-serif;
+   // - WIDTH
+   // - HEIGHT
+
+   function otherCloseModal(event) {
+      let validation = document.getElementById("validationModal");
+      if (validation === event.target) {
+         return (validation.style.display = "none");
+      }
+   }
+
    return (
       <div
          id="validationModal"
+         onClick={(e) => otherCloseModal(e)}
          style={{
             backgroundColor: defaultModal.backgroundColor,
          }}
