@@ -2,7 +2,7 @@ import "./Modal.scss";
 
 // Function to Toggle the Modal
 export function openModal() {
-   document.getElementById("validationModal").style.display = "block";
+   document.getElementById("validationModal").style.display = "flex";
 }
 
 // Function to Close the Modal
@@ -43,10 +43,10 @@ export default function Modal({
       fontSize: modalFontSize || 32, // Size in pixels (px)
       widthOfModal: modalWidth || 66, // Values between [0-100] (%age)
       heightOfModal: modalHeight || 66, // Values between [0-100] (%age)
-      amountOfRed: mRed || 50, // Values between [0-255] (RGB values)
-      amountOfGreen: mGreen || 200, // Values between [0-255] (RGB values)
-      amountOfBlue: mBlue || 50, // Values between [0-255] (RGB values)
-      mainBackgroundOpacity: mOpacity || 25, // Values between [0-100] (%age)
+      amountOfRed: mRed || 150, // Values between [0-255] (RGB values)
+      amountOfGreen: mGreen || 150, // Values between [0-255] (RGB values)
+      amountOfBlue: mBlue || 150, // Values between [0-255] (RGB values)
+      mainBackgroundOpacity: mOpacity || 50, // Values between [0-100] (%age)
    };
 
    // Close Modal when clicking anywhere else
