@@ -1,4 +1,4 @@
-[![forthebadge](https://forthebadge.com/images/badges/made-with-react.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/license-mit.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/license-mit.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/made-with-react.svg)](https://forthebadge.com)
 
 # LewisModal : The modal you've been searching for ages
 
@@ -6,48 +6,42 @@ LewisModal aims at creating a light, swift & customizable modal to complete what
 
 ## Table of Contents
 
--  [Install](#installation)
--  [Languages used](#languages)
--  [How to use it ?](#how-does-it-work-)
--  [Licensing](#licensing)
+1. How to Install
+2. Languages required
+3. How to use it ?
+4. Licensing
 
-## Installation
+## 1 - How to Install
 
-1. Install the module from NPM :
+-  Install the module from NPM :
 
 ```bash
  npm i lewismodal
 ```
 
-2. Then import it like this :
+-  Then import it like this :
 
 ```bash
  import LewisModal, { openModal } from "lewismodal";
 ```
 
-## Languages
+## 2- Languages required
 
 -  React
 -  JS
 -  CSS
 
-## How does it work ?
+## 3 - How to use it ?
 
-### LewisModal is made out of 2 functions :
+### --- LewisModal is made out of 2 functions
 
-```javascript
-openModal();
-```
+`openModal()` and `<LewisModal />`
 
-and
+### --- These 2 have to be placed inside of your project to make it work
 
-```javascript
-<LewisModal />
-```
+**<LewisModal />** needs to be placed near the beginning of your code.
+**openModal()** has to be inside of the toggling part (here, on form submit).
 
-### These 2 have to be placed inside of your project to make it work :
-
-LewisModal needs to be placed near the beginning of your code, while openModal has to be inside of the toggling part (here, on form submit).
 Here's an example :
 
 ```javascript
@@ -57,11 +51,15 @@ Here's an example :
       onSubmit={(e) => {
          e.preventDefault(), openModal();
       }}
-   ></form>
+   >
+   {Your code here...}
+   </form>
 </main>
 ```
 
-### LewisModal can be edited :
+### --- LewisModal can be customized
+
+Here's an example, from top to bottom :
 
 ```javascript
 <LewisModal
