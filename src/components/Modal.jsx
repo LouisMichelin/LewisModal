@@ -13,7 +13,6 @@ export function closeModal() {
 // Modal
 export default function Modal({
    modalMessage,
-   modalBackground,
    modalFontColor,
    modalFontSize,
    modalWidth,
@@ -26,7 +25,6 @@ export default function Modal({
    /*
     * Here are the Default Values of the Modal (if none defined) :
     * - modalMessage : Displayed message on <Modal/>
-    * - modalBackground : Color of the background on <Modal/>
     * - modalFontColor : Color of the message on <Modal/>
     * - modalFontSize : Size of the message on <Modal/>
     * - modalWidth : Width of the <Modal/>
@@ -38,7 +36,6 @@ export default function Modal({
     */
    const defaultModal = {
       message: modalMessage || "Success !", // String message between ""
-      backgroundColor: modalBackground || "lightgreen", // Colors (any sort)
       fontColor: modalFontColor || "black", // Colors (any sort)
       fontSize: modalFontSize || 32, // Size in pixels (px)
       widthOfModal: modalWidth || 66, // Values between [0-100] (%age)
