@@ -4,12 +4,16 @@
 
 LewisModal aims at creating a light, swift & customizable modal to complete what you expect out of a modal.
 
+---
+
 ## Table of Contents
 
 1. How to Install
 2. Languages required
 3. How to make it work ?
 4. Licensing
+
+---
 
 ## 1 - How to Install
 
@@ -22,8 +26,10 @@ First, install the module from NPM :
 and then import it inside your project :
 
 ```bash
- import LewisModal, { openModal } from "lewismodal";
+ import LewisModal, { openModal } from "lewismodal"
 ```
+
+---
 
 ## 2- Languages required
 
@@ -31,18 +37,19 @@ and then import it inside your project :
 -  JS
 -  CSS
 
+---
+
 ## 3 - How to make it work ?
 
-### --- Requirements :
+### Requirements :
 
-You need both **`<LewisModal />`** and **`openModal()`** inside of your code.
+You need both `<LewisModal />` and `openModal()` inside of your code.
 
-### --- Placement :
+### Placement :
 
--  **`<LewisModal />`** has to be somewhere inside of your code (on top of it at best).
--  **`openModal()`** has to be placed inside of the triggering part.
+`<LewisModal />` has to be somewhere inside of your code (on top of it at best) and `openModal()` has to be placed inside of the triggering part.
 
-### --- Example :
+### Example :
 
 ```html
 <main>
@@ -55,32 +62,40 @@ You need both **`<LewisModal />`** and **`openModal()`** inside of your code.
          openModal();
         }}
    >
-   {Your code here...}
+        {Your code here...}
    </form>
 </main>
 ```
 
-> **LewisModal** is placed right after **<main>**, and **openModal()** is inside of "onSubmit".
-> Therefore, the modal will be triggered whenever a **<form>** is sent.
+> **LewisModal** is placed right after **main**.
+> **openModal()** is inside **onSubmit()**. Therefore, the modal will be triggered whenever a **form** is sent.
 
-### --- Customization
+### Customization
 
--  **`modalMessage` = { string }** --- text displayed
--  **`modalFontColor` = { any }** --- text color **( string, rgb() ...)**
--  **`modalFontSize` = { number }** --- size of text **( px )**
--  **`modalWidth` = { number }** --- width of modal **( % , [0-100] )**
--  **`modalHeight` = { number }** --- height of modal **( % , [0-100] )**
--  **`mRed` = { number }** --- background color with the **RED** of RGB: **( [0-255] )**
--  **`mGreen` = { number }** --- background color with the **GREEN** of RGB: **( [0-255] )**
--  **`mBlue` = { number }** --- background color with the **BLUE** of RGB: **( [0-255] )**
--  **`mOpacity` = { number }** --- opacity of background **( % , [0-100] )**
+-  **`modalMessage` = { string }** : _text displayed_
+-  **`modalFontColor` = { any }** : _text color_ **( string, rgb() ...)**
+-  **`modalFontSize` = { number }** : _size of text_ **( px )**
+-  **`modalWidth` = { number }** : _width of modal_ **( % , [0-100] )**
+-  **`modalHeight` = { number }** : _height of modal_ **( % , [0-100] )**
+-  **`mRed` = { number }** : _background color with the_ **RED** _of RGB_ **( [0-255] )**
+-  **`mGreen` = { number }** : _background color with the_ **GREEN** _of RGB_ **( [0-255] )**
+-  **`mBlue` = { number }** : _background color with the_ **BLUE** _of RGB_ **( [0-255] )**
+-  **`mOpacity` = { number }** : _opacity of background_ **( % , [0-100] )**
 
 **Here's an example :**
 
-```html
-<LewisModal modalMessage={"Document Created!"} modalFontColor={"white"}
-modalFontSize={32} modalWidth={75} modalHeight={75} mRed={150} mGreen={150}
-mBlue={150} mOpacity={50} />
+```javascript
+<LewisModal
+   modalMessage={"Document Created!"}
+   modalFontColor={"white"}
+   modalFontSize={32}
+   modalWidth={75}
+   modalHeight={75}
+   mRed={150}
+   mGreen={150}
+   mBlue={150}
+   mOpacity={50}
+/>
 ```
 
 ## Licensing
