@@ -4,16 +4,12 @@
 
 LewisModal aims at creating a light, swift & customizable modal to complete what you expect out of a modal.
 
----
-
 ## Table of Contents
 
 1. How to Install
 2. Languages required
 3. How to make it work ?
 4. Licensing
-
----
 
 ## 1 - How to Install
 
@@ -29,15 +25,11 @@ and then import it inside your project :
  import LewisModal, { openModal } from "lewismodal"
 ```
 
----
-
 ## 2- Languages required
 
 -  React
 -  JS
 -  CSS
-
----
 
 ## 3 - How to make it work ?
 
@@ -45,9 +37,13 @@ and then import it inside your project :
 
 You need both `<LewisModal />` and `openModal()` inside of your code.
 
+---
+
 ### Placement :
 
 `<LewisModal />` has to be somewhere inside of your code (on top of it at best) and `openModal()` has to be placed inside of the triggering part.
+
+---
 
 ### Example :
 
@@ -69,6 +65,8 @@ You need both `<LewisModal />` and `openModal()` inside of your code.
 
 > **LewisModal** is placed right after **main**.
 > **openModal()** is inside **onSubmit()**. Therefore, the modal will be triggered whenever a **form** is sent.
+
+---
 
 ### Customization
 
