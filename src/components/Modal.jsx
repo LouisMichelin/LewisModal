@@ -17,6 +17,7 @@ export default function Modal({
    modalFontSize,
    modalWidth,
    modalHeight,
+   modalTextAreaBgColor,
    mRed,
    mGreen,
    mBlue,
@@ -40,6 +41,7 @@ export default function Modal({
       fontSize: modalFontSize || 32, // Size in pixels (px)
       widthOfModal: modalWidth || 66, // Values between [0-100] (%age)
       heightOfModal: modalHeight || 66, // Values between [0-100] (%age)
+      textzoneBackgroundColor: modalTextAreaBgColor || "lightgreen",
       amountOfRed: mRed || 150, // Values between [0-255] (RGB values)
       amountOfGreen: mGreen || 150, // Values between [0-255] (RGB values)
       amountOfBlue: mBlue || 150, // Values between [0-255] (RGB values)
@@ -67,6 +69,7 @@ export default function Modal({
             style={{
                width: `${defaultModal.widthOfModal}%`,
                height: `${defaultModal.heightOfModal}%`,
+               backgroundColor: defaultModal.textzoneBackgroundColor,
             }}
          >
             <button id="closeValidationModal" onClick={closeModal}></button>
