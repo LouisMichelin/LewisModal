@@ -33,19 +33,19 @@ and then import it inside your project :
 
 ## 3 - How to make it work ?
 
-### Requirements :
+### • Requirements :
 
 You need both `<LewisModal />` and `openModal()` inside of your code.
 
 ---
 
-### Placement :
+### • Placement :
 
 `<LewisModal />` has to be somewhere inside of your code (on top of it at best) and `openModal()` has to be placed inside of the triggering part.
 
 ---
 
-### Example :
+### • Example :
 
 ```html
 <main>
@@ -68,7 +68,7 @@ You need both `<LewisModal />` and `openModal()` inside of your code.
 
 ---
 
-### Customization
+### • Customization
 
 -  **`modalMessage` = { string }** : _text displayed_
 -  **`modalFontColor` = { any }** : _text color_ **( string, rgb() ...)**
@@ -98,6 +98,6 @@ You need both `<LewisModal />` and `openModal()` inside of your code.
 />
 ```
 
-## Licensing
+## 4 - Licensing
 
 This project is completely free & open under an MIT License.
