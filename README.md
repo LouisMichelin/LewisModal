@@ -77,6 +77,7 @@ You need both `<LewisModal />` and `openModal()` inside of your code.
 -  **`modalFontSize` = { number }** : _size of text_ **( px )**
 -  **`modalWidth` = { number }** : _width of modal_ **( % , [0-100] )**
 -  **`modalHeight` = { number }** : _height of modal_ **( % , [0-100] )**
+-  **`modalTextAreaBgColor` = { any }** : _background color of text area's div_ **( string, rgb() ...)**
 -  **`mRed` = { number }** : _background color with the_ **RED** _of RGB_ **( [0-255] )**
 -  **`mGreen` = { number }** : _background color with the_ **GREEN** _of RGB_ **( [0-255] )**
 -  **`mBlue` = { number }** : _background color with the_ **BLUE** _of RGB_ **( [0-255] )**
@@ -91,6 +92,7 @@ You need both `<LewisModal />` and `openModal()` inside of your code.
    modalFontSize={32}
    modalWidth={75}
    modalHeight={75}
+   modalTextAreaBgColor={"darkgreen"}
    mRed={150}
    mGreen={150}
    mBlue={150}
