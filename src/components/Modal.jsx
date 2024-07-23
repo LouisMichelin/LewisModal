@@ -30,6 +30,7 @@ export default function Modal({
     * - modalFontSize : Size of the message on <Modal/>
     * - modalWidth : Width of the <Modal/>
     * - modalHeight : Height of the <Modal/>
+    * - textzoneBackgroundColor : Color of the message area's background
     * - mRed : Quantity of Red for Main Background's RGBa()
     * - mGreen : Quantity of Green for Main Background's RGBa()
     * - mBlue : Quantity of Blue for Main Background's RGBa()
@@ -41,7 +42,7 @@ export default function Modal({
       fontSize: modalFontSize || 32, // Size in pixels (px)
       widthOfModal: modalWidth || 66, // Values between [0-100] (%age)
       heightOfModal: modalHeight || 66, // Values between [0-100] (%age)
-      textzoneBackgroundColor: modalTextAreaBgColor || "lightgreen",
+      textzoneBackgroundColor: modalTextAreaBgColor || "lightgreen", // Colors (any sort)
       amountOfRed: mRed || 150, // Values between [0-255] (RGB values)
       amountOfGreen: mGreen || 150, // Values between [0-255] (RGB values)
       amountOfBlue: mBlue || 150, // Values between [0-255] (RGB values)
